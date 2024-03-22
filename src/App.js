@@ -7,7 +7,7 @@ function App() {
     const links = ['https://halifax.bibliocommons.com/v2/record/S135C2089661', 'https://halifax.bibliocommons.com/v2/record/S135C2092831', 'https://halifax.bibliocommons.com/v2/record/S135C2089665', 'https://halifax.bibliocommons.com/v2/record/S135C2089654', 'https://halifax.bibliocommons.com/v2/record/S135C2090646', 'https://halifax.bibliocommons.com/v2/record/S135C2090381', 'https://halifax.bibliocommons.com/v2/record/S135C2093697', 'https://halifax.bibliocommons.com/v2/record/S135C2091549', 'https://halifax.bibliocommons.com/v2/record/S135C2093701', 'https://halifax.bibliocommons.com/v2/record/S135C2094337', 'https://halifax.bibliocommons.com/v2/record/S135C2093658', 'https://halifax.bibliocommons.com/v2/record/S135C2094338']
     const images = [];
     for (let i = 1; i < 13; i++) {
-      images.push(<div className="img"><a href={`${links[i-1]}`} target="blank"><img alt="image" key={i} src={`/${i}.jpg`} /><h3>{text[i - 1]}</h3></a></div>);
+      images.push(<div className="img"><a href={`${links[i-1]}`} target="blank"><img alt="book" key={i} src={`/${i}.jpg`} /><h3>{text[i - 1]}</h3></a></div>);
     }
     return images;
   }
